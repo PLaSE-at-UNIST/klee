@@ -30,3 +30,18 @@ lit.site.cfg
 autoconf/aclocal.m4
 autoconf/autom4te.cache/
 autom4te.cache/
+
+# GTAG
+GPATH
+GTAGS
+GRTAGS
+
+# release binary
+release
+
+# klee-out
+**/klee-out-*
+**/klee-last
+
+# bitcode
+*.bc
