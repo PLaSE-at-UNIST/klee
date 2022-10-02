@@ -1,0 +1,5 @@
+# This document shows how to build KLEE in this container.
+
+- cd /home/klee/klee_src_git
+- mkdir build
+- cmake -DCMAKE_BUILD_TYPE=Debug -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config -DENABLE_TCMALLOC:BOOL=true TCMALLOC_INCLUDE_PATH=/usr/include/gperftools -DENABLE_POSIX_RUNTIME:BOOL=ON -DENABLE_KLEE_UCLIBC=ON -DKLEE_UCLIBC_PATH=/tmp/klee-uclibc-110 -DENABLE_SOLVER_Z3:BOOL=true -DENABLE_SYSTEM_TESTS:BOOL=ON -DENABLE_UNIT_TESTS=ON -DGTEST_SRC_DIR=/tmp/googletest-release-1.11.0 ..
