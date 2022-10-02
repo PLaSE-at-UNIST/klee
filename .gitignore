@@ -45,3 +45,4 @@ release
 
 # bitcode
 *.bc
+*ll
